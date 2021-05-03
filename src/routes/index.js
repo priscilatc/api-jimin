@@ -1,7 +1,7 @@
 const {Router} = require('express');
 const router = Router();
 
-const {getPhotos, getPhotosByColor, welcome} = require('../controllers/index.controller.js')
+const {getPhotos, getPhotosByColor, welcome} = require('../controllers/index.controller.js');
 
 router.get('/', welcome);
 router.get('/photos', getPhotos);
