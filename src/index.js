@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: false}));
 app.set('port', process.env.PORT|| 3000);
 
 //routes
-app.use(require('./routes/index'));
+app.use(require('./src/routes/index.js'));
 
 
 app.listen(app.get('port'), ()=>{
